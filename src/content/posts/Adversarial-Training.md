@@ -4,7 +4,7 @@ published: 2025-05-20
 description: 'Adversarial Training Learning Notes'
 image: ''
 tags: [machine learing, deep learing]
-category: ''
+category: 'Learning Notes'
 draft: false 
 lang: ''
 ---
