@@ -3,8 +3,8 @@ title: Adversarial Training
 published: 2025-05-20
 description: 'Adversarial Training Learning Notes'
 image: ''
-tags: [machine learing, deep learing]
-category: 'Learning Notes'
+tags: [machine-learing, deep-learing]
+category: 'Learning-Notes'
 draft: false 
 lang: ''
 ---
