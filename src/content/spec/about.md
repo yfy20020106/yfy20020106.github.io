@@ -1,6 +1,8 @@
 # About Me
 I am a master's student majoring in software engineering at **East China Normal University**, and my current main research direction is combinatorial optimization. The areas of interest include large models(NLP)、 Mechanism design and game theory.
 
+My email:  yfy20020106@foxmail.com
+
 This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
 
 ::github{repo="saicaca/fuwari"}
