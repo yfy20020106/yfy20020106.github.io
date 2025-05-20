@@ -36,7 +36,7 @@ export async function getStaticPaths() {
 
 	const standardPaths = allTagsArray.map((tag) => ({
 		params: {
-			tag: encodePathSegment(tag.replace(/ /g, "-")),
+			tag: encodePathSegment(tag).replace(/%20/g, "-"),
 		},
 		props: {
 			decodedTag: tag,
@@ -56,7 +56,7 @@ export async function getStaticPaths() {
 }
 
 const { decodedTag } = Astro.props;
-const tag = decodedTag || decodePathSegment(Astro.params.tag as string).replace(/-/g, " ");
+const tag = decodedTag || decodePathSegment(Astro.params.tag as string);
 ---
 
 <MainGridLayout title={i18n(I18nKey.archive)} description={i18n(I18nKey.archive)}>
