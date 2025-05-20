@@ -36,7 +36,7 @@ export async function getStaticPaths() {
 
 	const standardPaths = allTagsArray.map((tag) => ({
 		params: {
-			tag: encodePathSegment(tag),
+			tag: encodePathSegment(tag).replace(/%20/g, "-"),
 		},
 		props: {
 			decodedTag: tag,
