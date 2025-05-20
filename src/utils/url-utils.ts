@@ -21,7 +21,7 @@ export function getTagUrl(tag: string): string {
 	if (!tag) return url("/archive/tag/");
 
 	// use common encoding function
-	const encodedTag = encodePathSegment(tag);
+	const encodedTag = encodePathSegment(tag).replace(/%20/g, "-");
 	const tagUrl = `/archive/tag/${encodedTag}/`;
 	console.log(`Generating URL for tag "${tag.trim()}" => "${tagUrl}"`);
 	return url(tagUrl);
